@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bookem</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="login.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="container" class="flex">
+    <aside id="instructionDiv" class="basis-3/12 bg-blue-600 text-neutral-200 h-screen p-3">
+    </aside>
+  
+    <main class="basis-9/12 h-screen p-3 flex flex-col items-center">
+      <h1 class="text-3xl text-fuchsia-600 font-bold m-3 text-center">Google Direct Download Link Generator</h1>
+
+      <div id="tabs" class="grid grid-cols-3 gap-0">
+        <div  class="h-16 border-2 bg-slate-50 flex justify-center p-1 cursor-pointer rounded-tr-lg rounded-tl-lg" id="tab1control">
+          Library
+        </div>
+        <div  class="h-16 border-2 bg-slate-50 flex justify-center p-1 cursor-pointer rounded-tr-lg rounded-tl-lg" id="tab2control">
+          Book Entry form
+        </div>
+        <div  class="h-16 border-2 bg-slate-50 flex justify-center p-1 cursor-pointer rounded-tr-lg rounded-tl-lg" id="tab3control">
+          Tab control search for book form
+        </div>
+      </div> <!-- End Tab controls -->
+
+      <div id="tabContainers" class="border-2">
+        
+        <div id="tab1content" class="w-full">
+          <div class="flex flex-col items-center justify-center grow p-2 my-2">
+            <div id="library">
+            </div>
+          </div>
+        </div>
+        
+        <div id="tab2content" class="w-full">
+          <div class="flex flex-col items-center justify-center grow p-2 my-2">
+            <div id="box1">
+              <h1  id="ENTRY">ENTRY TEMPLATE </h1>
+              <label for="Title"><b>Title of Book</b></label>
+              <input type="text" placeholder="Title" name="Title" id="book_title" required><br><br>
+              <label for="ISBN"><b>ISBN number</b></label>
+              <input type="text" placeholder="ISBN" name="ISBN" id="book_isbn" required><br><br>
+              <label for="Author"><b>Author</b></label>
+              <input type="text" placeholder="Author" name="Author" id="book_author" required><br><br>
+              
+              <label for="Edition"><b>Book Edition</b></label>
+              <input type="Edition" placeholder="Edition" name="Edition"><br><br>
+              <label for="Condition"><b>Book Condition</b></label>
+              <select name="Condition" id="Condition">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Avergae">Average</option>
+                <option value="Bad">Bad</option>
+              </select> <br><br>
+              <label for="Pub"><b>Publisher</b></label>
+              <input type="text" placeholder="Pub" name="Pub"><br><br>
+              <label for="PubYear"><b>Publisher Year</b></label>
+              <input type="text" placeholder="PubYear" name="PubYear"><br><br>
+              <button id="submit_book">Submit</button>
+              <button id="reset_add_book">Clear Fields</button>
+            </div>
+          </div>
+        </div>
+        
+        <div id="tab3content" class="w-full">
+            <div class="flex flex-col items-center justify-center grow p-2 my-2">
+             tab 3 search for book form
+          </div>
+        </div>
+        
+      </div>
+  
+    </main>
+    
+  </div>
+  <script src="tabs.js"></script>
+  <script src="bookem-1.js"></script>
+</body>
+
+</html>
