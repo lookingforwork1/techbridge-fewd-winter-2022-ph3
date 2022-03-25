@@ -77,7 +77,6 @@ for (var i=0; i<args.length; ++i) {
     }
 }
 
-// https://knowingrespectfulcarrier.russeby.repl.co/test.html?user=russ&password=asdfasdf
 
 console.log($_GET['user'])
 console.log($_GET['password'])
